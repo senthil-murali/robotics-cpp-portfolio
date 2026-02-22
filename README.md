@@ -8,4 +8,4 @@ Modern C++ and ROS2 projects targeting robotics software engineering roles.
 - NVIDIA Isaac Sim
 
 ## Projects
-
+*(Coming soon)*
