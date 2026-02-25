@@ -1,0 +1,9 @@
+build/
+.cache/
+.claude/
+.vscode/
+.claude.json
+compile_commands.json
+template/
+
+new-project.sh
