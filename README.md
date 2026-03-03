@@ -14,7 +14,11 @@ Currently focused on modern C++ and ROS2, with each project building toward prod
 
 ## Tech Stack
 
-C++17 · CMake · Ninja · clangd · ROS2 · NVIDIA Isaac Sim · Jetson Orin Nano
+- **Languages:** C++17
+- **Build Systems:** CMake, CMake Presets, Ninja
+- **Tooling:** clangd, VS Code, CodeLLDB, Git
+- **Hardware:** Jetson Orin Nano Super, FANUC Industrial Robots
+- **OS:** Ubuntu 22.04
 
 ## Currently Learning
 
