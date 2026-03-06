@@ -92,6 +92,8 @@ public:
       std::cout << "-------------------------------\n";
     }
   }
+
+  //THis method is const because it doesn't modify the ConnectionManager, it just looks up a robot. 
   const Robot *find_robot(const std::string &name) const {
     // std::find_if searches linearly, returns iterator to first match or end()
     // if not found.
@@ -106,6 +108,7 @@ public:
     }
     return nullptr;
   }
+  // This non-const version allows setters to modify the robot's status after finding it.
 
   Robot *find_robot(const std::string &name) {
     // std::find_if searches linearly, returns iterator to first match or end()
@@ -132,7 +135,7 @@ int main() {
   auto *RobotAlpha = manager.find_robot("Alpha");
   auto *RobotBeta = manager.find_robot("Beta");
 
-  // after setting statuses, before listing:
+  // Simulated delay between robot communications
   std::this_thread::sleep_for(std::chrono::seconds(2));
 
   auto *RobotGamma = manager.find_robot("Gamma");
@@ -150,7 +153,7 @@ int main() {
     std::cout << RED "✗ Alpha not found, cannot set status" << RESET << "\n";
   }
 
-  // after setting statuses, before listing:
+  // Simulated delay between robot communications
   std::this_thread::sleep_for(std::chrono::seconds(2));
 
   if (RobotBeta) {
@@ -159,7 +162,7 @@ int main() {
     std::cout << RED "✗ Beta not found, cannot set status" << RESET << "\n";
   }
 
-  // after setting statuses, before listing:
+  // Simulated delay between robot communications
   std::this_thread::sleep_for(std::chrono::seconds(2));
 
   if (RobotGamma) {
