@@ -11,13 +11,14 @@ Currently focused on modern C++ and ROS2, with each project building toward prod
 | Project | Key Concepts | Description |
 |---------|-------------|-------------|
 | [sensor-data-processor](./sensor-data-processor) | `unique_ptr`, `std::move`, lambdas, `std::function`, RAII | Sensor data pipeline with filtering, transforming, and ownership transfer |
+| [robot-connection-manager](./robot-connection-manager) | `const` correctness, raw pointer access, `find_if`, `chrono`, erase-remove idiom | Factory robot connection manager with ownership, search, and status tracking |
 
 ## Tech Stack
 
 - **Languages:** C++17
 - **Build Systems:** CMake, CMake Presets, Ninja
 - **Tooling:** clangd, VS Code, CodeLLDB, Git
-- **Hardware:** Jetson Orin Nano Super, FANUC Industrial Robots
+- **Hardware:** Jetson Orin Nano Super
 - **OS:** Ubuntu 22.04
 
 ## Currently Learning
