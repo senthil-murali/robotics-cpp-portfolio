@@ -155,7 +155,8 @@ int main() {
 
   // Simulated delay between robot communications
   std::this_thread::sleep_for(std::chrono::seconds(2));
-
+  
+//cHECKING FOR NULLPTR BEFORE SETTING STATUS TO AVOID CRASHES.
   if (RobotBeta) {
     RobotBeta->set_connection_status("connected");
   } else {
