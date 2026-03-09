@@ -15,9 +15,9 @@ A ROS2 lifecycle component node that subscribes to /scan (LaserScan), detects ob
 
 - **Lifecycle node** — Controlled startup/shutdown through explicit state transitions — node only processes data when activated.
 - **Component node** — No main(), registered via macro, loadable into a shared container with other nodes.
-- **LifecyclePublisher** — Has its own active/inactive state, silently drops messages when deactivated. No LifecycleSubscription exists — only publishing needs lifecycle control.
+- **LifecyclePublisher** — Has its own active/inactive state, silently drops messages when deactivated. No LifecycleSubscription exists ,only publishing needs lifecycle control.
 - **shared_ptr** — ROS2 uses shared_ptr for publishers, subscribers, and messages because multiple parts of the system need access to the same object.
-- **QoS configuration** — RELIABLE for alerts (guaranteed delivery), BEST_EFFORT for scan data (fire and forget, next scan arrives in 100ms anyway).
+- **QoS configuration** — RELIABLE for alerts (guaranteed delivery), BEST_EFFORT for scan data (fire and forget).
 - **Lambda capture [this]** — Captures the class instance so the subscriber callback can access member variables like the threshold and publisher.
 - **ROS2 parameters** — Danger threshold declared as a parameter so it can be changed at launch without recompiling.
 - **RAII (shared_ptr reset)** — reset() in on_cleanup releases the shared_ptr, letting the smart pointer handle destruction automatically.
