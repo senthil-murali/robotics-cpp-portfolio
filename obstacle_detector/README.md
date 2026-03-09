@@ -8,7 +8,7 @@ A ROS2 lifecycle component node that subscribes to /scan (LaserScan), detects ob
 
 ![Lifecycle Diagram](docs/lifecycle_diagram.svg)
 
-*State machine diagram · Created with Claude AI · Based on rclcpp_lifecycle*
+*State machine diagram · Based on rclcpp_lifecycle*
 
 </div>
 ## Concepts Demonstrated
