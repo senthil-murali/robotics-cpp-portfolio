@@ -4,9 +4,13 @@ A ROS2 lifecycle component node that subscribes to /scan (LaserScan), detects ob
 
 ## Lifecycle State Diagram
 
-![Lifecycle Diagram](docs/lifecycle_diagram.svg)
-<sub>State machine diagram · Created with Claude AI · Based on rclcpp_lifecycle</sub>
+<div align="center">
 
+![Lifecycle Diagram](docs/lifecycle_diagram.svg)
+
+*State machine diagram · Created with Claude AI · Based on rclcpp_lifecycle*
+
+</div>
 ## Concepts Demonstrated
 
 - **Lifecycle node** — Controlled startup/shutdown through explicit state transitions — node only processes data when activated.
