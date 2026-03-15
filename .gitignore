@@ -10,3 +10,4 @@ new-project.sh
 install/
 log/
 colcon_defaults.yaml
+PROJECT_NOTES.md
