@@ -9,3 +9,4 @@ template/
 new-project.sh
 install/
 log/
+colcon_defaults.yaml
