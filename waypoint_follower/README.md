@@ -6,7 +6,7 @@ A C++ action client that navigates TurtleBot3 through predefined waypoints using
 
 <div align="center">
 
-![Execution Flow](docs/flow.png)
+![Execution Flow](docs/Flow.png)
 
 *Action client execution flow · Nav2 NavigateToPose*
 
